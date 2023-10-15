@@ -1,0 +1,832 @@
+/* ===================
+Template Name: Karousel Auto
+Template URI: 
+Author: Meherab Sifat
+Version: 1.0
+Description: A Simple Car Buying Template.
+=======================*/
+
+/* CSS INDEX
+
+1.COMMON CSS
+2.REUSEABLE COMPONENT 
+3.HEADER SECTION STYLE 
+4.NAV BAR STYLE 
+5.HOME PAGE STYLE START
+6.REUSEABLE HEADING  STYLE
+7.ABOUT PAGE STYLE START
+8.SERVICES PAGE STYLE START
+9.TEAM PAGE STYLE START
+10.CONTACT PAGE STYLE START
+11.REQUEST  PAGE STYLE START
+12.MEDIA QUARY/RESPONSIVE
+
+*/
+
+
+/* COMMON CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 800;
+
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+
+/* REUSEABLE COMPONENT */
+.container{
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 20px;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.p-top{
+    padding-top: 20px ;
+}
+.p-top-bottom{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.default-btn{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 5;
+  background: #ebbd1e;
+
+}
+.text-center{
+    text-align: center;
+}
+
+
+/* HEADER SECTION STYLE */
+#header{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.952) , rgba(0, 0, 0, 0.084)) , url('images/bg11.png') no-repeat center center / cover;
+    position: relative;
+   
+  
+}
+
+/* NAV BAR STYLE */
+
+nav{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+.logo img{ 
+
+    width: 100px;
+
+}
+.primary-menu ul li{
+    display: inline-block;
+    padding: 0 20px;
+
+}
+.primary-menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+}
+.primary-menu ul li a:hover{
+    color: #ebbd1e;
+    
+}
+
+
+
+.heading-title{
+    position: absolute;
+    top: 40%;
+    width: 400px;
+}
+.heading-title h1 {
+    font-size: 45px;
+    color: #fff;
+    font-weight: 700;
+  }
+.heading-title h1 span {
+    color: #ebbd1e;
+  }
+.heading-title p{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 500;    
+}
+/* HEADER SECTION STYLE */
+
+
+/*===========HOME PAGE STYLE START====== */
+
+
+/* ABOT SECTION STYLE */
+.about{
+    
+    padding-top: 40px;
+    
+}
+.about-heading{
+    padding-bottom: 60px;
+}
+.about-heading h2 {
+    font-size: 35px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    color: #000;
+  }
+  .about-heading p{
+    font-size: 16px;
+    color: #000;
+  }
+  .car-gallery{
+    padding-bottom: 60px;
+  }
+ .car-gallery .row1{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
+  }
+  .slider-vdo-title h2 {
+    font-size: 35px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    padding-bottom: 40px;
+    color: #000;
+  }
+
+/* ABOT SECTION STYLE */
+
+/* SLIDER SECTION STYLE */
+.container-fluid {
+    width: 100%;
+    background: #0b07079a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .background-clip{
+    max-width: 100%;
+  }
+
+ 
+/* SLIDER SECTION STYLE */
+
+
+/* FOOTER SECTION STYLE */
+.footer{
+    background: #ebbd1e;
+    padding: 40px 0;
+}
+.footer-menu{
+    margin: 40px 0;
+}
+.footer-menu ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.footer-menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+}
+
+/* FOOTER SECTION STYLE */
+
+
+/*===========HOME PAGE STYLE END ====== */
+
+
+
+
+/* REUSEABLE HEADING  STYLE*/
+ .reuse-page-heading h2{
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+
+ }
+ .reuse-page-heading p{
+  margin-right: 100px;
+  margin-left: 100px;
+
+  
+
+ }
+ .reuseable-page-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.reuseable-page-title h1{
+  font-size: 45px;
+  color: #fff;
+  padding-bottom: 20px ;
+  font-weight: 700;
+}
+.reuseable-page-title p{
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* REUSEABLE HEADING  STYLE*/ 
+
+
+
+ /* ======ABOUT PAGE STYLE START========== */
+#about{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.952) , rgba(0, 0, 0, 0.084)) , url('images/bg3.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    position: relative;
+ 
+   
+  
+}
+.about-cars{
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+.about-img img{
+    width: 100%;
+
+}
+.about-img-text{
+    padding-top: 40px;
+    width: 80%;
+}
+ /* ======ABOUT PAGE STYLE END========== */
+
+
+/* ======SERVICES PAGE STYLE START========== */
+#services{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.952) , rgba(0, 0, 0, 0.084)) , url('images/services.png') no-repeat center center / cover;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+.services-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    
+    
+    
+}
+.card-one{
+    width: 350px;
+    background: #f5f4f4;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    transition: all .3s ease-in;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.card-one:hover{
+
+    box-shadow: 0px 2px 8px #cecccc;
+
+}
+.card-title h4{
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+   
+}
+
+/* ======SERVICES PAGE STYLE END========== */
+
+
+/* ======TEAM PAGE STYLE START========== */
+#team{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.952) , rgba(0, 0, 0, 0.084)) , url('images/bg7.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.team-member-bio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+.team-member-card {
+  width: 250px;
+  margin: 20px;
+  }
+
+.member-img img {
+    border-radius: 15px;
+  }
+  .member-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .member-name h3 {
+    font-size: 20px;
+    color: #7d7d7d;
+  }
+  .member-name h5 {
+    margin: 10px 0;
+    color: #EBBD1E;
+  }
+  .member-name p {
+    font-size: 14px;
+    color: #818181;
+  }
+
+  /* ======TEAM PAGE STYLE END========== */
+    
+
+
+
+ /* ======CONTACT PAGE STYLE START========== */ 
+#contact{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.952) , rgba(0, 0, 0, 0.084)) , url('images/bg4.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    position: relative;
+   
+  
+}
+.contact-area{
+    display: flex;
+
+
+}
+.contact-address{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+
+}
+.con-title{
+    margin-bottom: 30px;
+   
+
+}
+.con-title h3 {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .con-title p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #656565;
+  }
+  .con-icon {
+    display: flex;
+    flex-direction: column;
+    
+ 
+  }
+  .phone-icon span {
+    display: inline-block;
+    font-size: 25px;
+    margin-right: 25px;
+    color: #000;
+  }
+  .phone-icon a {
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+  }
+ 
+ 
+.contact-form-title h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+
+
+}
+.contact-form{
+    width: 60%;
+    padding: 40px;
+
+}
+.inner-form{
+    background: #EBBD1E;
+    padding: 50px;
+   
+}
+.inner-form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.inner-form form input{
+    margin-bottom: 20px;
+}
+.default-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all .5s;
+    background: #ffffff;
+    color: #000000;
+    outline: none;
+  }
+  .w100{
+    width: 100%;
+}
+.w50{
+    width: 48%;
+}
+form button {
+    border: none;
+    display: inline-block;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: #fff;
+    transition: .5s;
+    color: #000000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .inner-col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .find-us {
+    margin-bottom: 40px;
+  }
+  .find-us-title h3 {
+    font-size: 30px;
+    color: #000;
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  .inner-location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .location-img {
+    padding: 20px;
+    margin-right: 30px;
+  }
+  .location-img img {
+    max-width: 70%;
+  }
+  .location-text h4 {
+    font-size: 20px;
+    color: #000;
+  }
+  .inner-map{
+    height: 300px;
+    margin-bottom: 20px;
+
+  }
+  .inner-map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* ======CONTACT PAGE STYLE END========== */
+
+
+
+  /* ======REQUEST  PAGE STYLE START========== */
+#request-form{
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.952) , rgba(0, 0, 0, 0.084)) , url('images/bg5.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    position: relative;
+   
+  
+}
+.req-form-title h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+.request-form{
+    
+    padding: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+.request-form form {
+  width: 80%;
+  margin: auto;
+  border: 2px solid #EBBD1E;
+  padding: 30px 30px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.check-box-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.check-one {
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+    padding: 10px;
+  }
+  .check-one  input{
+    margin-right: 20px;
+  }
+  .pesonal-info-flex{
+    display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+    margin-top: 30px;
+   
+
+  }
+  .inner-info-left{
+    width: 15%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+
+  }
+  .inner-info-left label {
+    width: 100%;
+  }
+  label h4 {
+    font-size: 16px;
+    color: #454545;
+  }
+  .inner-info-right{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-content: center;
+    padding: 15px;
+
+  }
+  .inner-info-right input{
+    padding: 10px 10px;
+    background: #DDDDDD;
+    border: none;
+    outline: none;
+  }
+.address {
+  align-items: flex-start;
+}
+  .address input{
+    margin: 15px 0;
+
+  }
+  /* ======REQUEST  PAGE STYLE END========== */
+
+
+
+
+
+
+
+
+
+
+/* === ===== MEDIA QUARY/RESPONSIVE======== */
+
+@media (max-width: 992px){
+  .primary-menu ul li a {
+    font-size: 17px;
+  }
+  .request-form form {
+    width: 100%;
+   
+  }
+}
+@media (max-width: 810px){
+  .d-flex {
+    flex-direction: column;
+  }
+  .d-flex.mobile {
+    flex-direction: row;
+  }
+  .primary-menu {
+    margin-top: 20px;
+  }
+  .primary-menu ul li a {
+    font-size: 15px;
+  }
+
+  .heading-title {
+    top: 40%;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+  .heading-title h1 {
+    text-align: center;
+  }
+  .about-heading h2 {
+    font-size: 30px;
+  }
+  .heading-title p {
+    text-align: center;
+  }
+  .header-button {
+    text-align: center;
+  }
+  .reuseable-page-title h1 {
+    font-size: 40px;
+  }
+  .reuseable-page-title p {
+    font-size: 15px;
+  }
+  .contact-area {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-address {
+    width: 100%;
+    align-items: center;
+  }
+  .con-title {
+    text-align: center;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0;
+
+}
+.request-form{
+  padding: 20px;
+ 
+}
+
+.check-box-flex {
+  flex-direction: column;
+}
+.check-left{
+  width: 100%;
+}
+
+}
+@media (max-width: 768px){
+  .primary-menu ul li a {
+    font-size: 13px;
+  }
+  .inner-form {
+    padding: 30px;
+  }
+  .inner-col {
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-location {
+    width: 100%;
+  }
+  .inner-map {
+    width: 100%;
+  }
+
+
+}
+@media (max-width: 576px){
+ 
+  .primary-menu ul li {
+    padding: 0 10px;
+  }
+  .footer-menu {
+    margin: 0 0 30px 0;
+  }
+  .footer-menu ul li {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-title h4 {
+    font-size: 20px;
+  }
+  .inner-form {
+    padding: 20px;
+  }
+  .inner-form form input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .pesonal-info-flex {
+    flex-direction: column;
+  }
+  .inner-info-right {
+    width: 100%;
+    padding: 0;
+  }
+  .inner-info-left {
+    width: 100%;
+  }
+  .inner-info-right input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  label h4 {
+    padding: 10px 0;
+  }
+  .request-form {
+    text-align: left;
+  }
+  .address input {
+    margin: 5px 0;
+  }
+
+}
+@media (max-width: 400px){
+  .heading-title {
+    width: 100%;
+  }
+  .heading-title h1 {
+    font-size: 40px;
+  }
+  .primary-menu ul li a {
+    font-size: 10px;
+  }
+  .inner-form {
+    padding: 10px;
+  }
+
+
+}
+  
